@@ -132,20 +132,6 @@
                 </div>
                 <div class="card-body">
                     <div class="col-12 row">
-                        <div class="banka_tanim_button mt-3 mx-3">
-                            <button class="btn btn-success btn-sm" id="banka_tanimla_main_button"><i
-                                    class="fa fa-plus-square"
-                                    aria-hidden="true"></i> Banka
-                                Ekle
-                            </button>
-                            <button class="btn  btn-sm" id="banka_guncelle_main" style="background-color: #F6FA70"><i
-                                    class="fa fa-refresh" aria-hidden="true"></i> Banka Güncelle
-                            </button>
-                            <button class="btn btn-danger btn-sm" id="banka_sil"><i class="fa fa-trash"
-                                                                                    aria-hidden="true"></i> Banka
-                                Sil
-                            </button>
-                        </div>
                         <div class="col-12 row mx-1 mt-3">
                             <table class="table table-sm table-bordered w-100  nowrap" id="bank_list"
                                    style="font-size: 13px;">
@@ -254,7 +240,6 @@
     $(document).ready(function () {
         var table = $('#bank_list').DataTable({
             scrollY: '55vh',
-            scrollX: true,
             "info": false,
             "paging": false,
             createdRow: function (row, data, dataIndex) {
