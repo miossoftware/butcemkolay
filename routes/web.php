@@ -12,6 +12,10 @@ Route::get('/dashboard', function() {
 Route::get('/', function() {
     return view('welcome');
 })->name('welcome');
+// Welcome route (varsayılan sayfa)
+Route::get('/customers', function() {
+    return view('customers');
+})->name('customers');
 
 // Auth route (POST isteği)
 Route::post('/authenticate', [AuthController::class, 'authenticate']);
